@@ -13,7 +13,8 @@ export const Navbar =()=>{
         <div className="navbar">
             <div className="links">
         <Link to = "/"> Home </Link>
-        <Link to = "/Login"> Login</Link>
+        {!user ? <Link to = "/Login"> Login</Link> : <Link to = "/createpost"> Create Post </Link>}
+        
         </div>
         
         
